@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Задача 4</h1>
+    <p>
+      З клавіатури вводиться назва категорії водія (А-мотоцикл, В-легковий
+      автомобіль, С-вантажний автомобіль). Вивести на екран назву транспортного
+      засобу, яким він може керувати.
+    </p>
+    <script>
+      // 1.Вводимо необхідні дані
+      const enteredСategory = prompt("Введіть назву категорії");
+      let categoryName;
+      switch (enteredСategory.toLowerCase()) {
+        case "a":
+          categoryName = "мотоцикл";
+          break;
+        case "b":
+          categoryName = "легковий автомобіль";
+          break;
+        case "c":
+          categoryName = "вантажний автомобіль";
+          break;
+        default:
+          categoryName = "Невідома категорія. Будь ласка, введіть А, В або С.";
+          break;
+      }
+      document.write(categoryName);
+
+      // 2.Знаходимо результат.
+    </script>
+  </body>
+</html>
